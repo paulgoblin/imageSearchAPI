@@ -38,7 +38,7 @@ let clogs = [
 ]
 
 router.get('/', function(req, res, next) {
-  let randomClogs = _.shuffle(clogs).slice((Math.random()*8).round());
+  let randomClogs = _.shuffle(clogs).slice(Math.round(Math.random()*8));
   res.json( randomClogs );
 });
 
