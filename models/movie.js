@@ -76,7 +76,14 @@ movieSchema.statics.getMatches = function(cb){
       category: 'Sci-fi',
       runtime: '2 hours, 18 minutes',
       rated: 'R'
-
+    },
+    {
+      title: "STAR WARS: EPISODE VII - THE FORCE AWAKENS",
+      matchStrength: 78,
+      description: "Packed with action and populated by both familiar faces and fresh blood, The Force Awakens successfully recalls the series' former glory while injecting it with renewed energy.",
+      category: 'Sci-fi',
+      runtime: '2 hours, 16 minutes',
+      rated: 'PG-13'
     }
   ]
 
