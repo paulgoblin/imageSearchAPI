@@ -16,4 +16,10 @@ router.post('/', function(req, res, next) {
   })
 });
 
+router.get('/matches', function(req, res, next) {
+  Movie.getMatches((err, matches) => {
+    res.status(err ? 400 : 200).send(err || matches);
+  })
+});
+
 module.exports = router;

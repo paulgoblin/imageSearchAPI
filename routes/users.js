@@ -3,6 +3,7 @@
 var express = require('express');
 var router = express.Router();
 var User = require('../models/user');
+var Movie = require('../models/movie');
 
 router.get('/', function(req, res, next) {
   User.find({}, (err, users) => {
