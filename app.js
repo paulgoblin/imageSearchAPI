@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 var morgan = require('morgan');
 var cors = require('cors');
 var mongoose = require('mongoose');
-var mongoUrl = process.env.MONGOLAB_URI || 'mongodb://localhost/menavi';
+var mongoUrl = process.env.MONGOLAB_URI || 'mongodb://localhost/roomfinder';
 
 mongoose.connect(mongoUrl)
 
@@ -22,7 +22,6 @@ app.use(bodyParser.json());
 // ROUTES
 app.use('/image', require('./routes/image.js'));
 app.use('/clogs', require('./routes/clogs.js'));
-app.use('/movies', require('./routes/movies.js'));
 app.use('/users', require('./routes/users.js'));
 
 app.listen(PORT, function(){
